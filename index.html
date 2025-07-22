@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +15,10 @@
     .container {
       max-width: 600px;
       margin: 80px auto;
-      background-color: rgba(255, 165, 0, 0.4);
+      background-color: rgba(255, 165, 0, 0.45);
       padding: 30px;
       border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     h1, h2 {
       text-align: center;
@@ -39,7 +39,7 @@
       margin-top: 5px;
       border-radius: 5px;
       border: none;
-      background-color: rgba(255,255,255,0.9);
+      background-color: rgba(255,255,255,0.95);
       color: black;
     }
     button {
@@ -50,10 +50,16 @@
       color: white;
       border: none;
       border-radius: 5px;
+      font-size: 1em;
       cursor: pointer;
     }
     button:hover {
       background-color: #e65c00;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -62,26 +68,13 @@
     <h1>Turiano Agency</h1>
     <h2>Protecting Futures. Building Trust.</h2>
     <p class="intro">
-      Are you looking for real answers about life insurance, family protection, or long-term security? <br />
-      We're here to guide you with honesty, care, and clarity — because your peace of mind matters.
+      Are you interested in protecting your family? <br />
+      Need honest, professional guidance on life insurance or financial security? <br />
+      Let’s talk — we’re here to help.
     </p>
+
     <form name="quote-request" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="quote-request" />
+      
       <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" required />
-
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" required />
-
-      <label for="message">How can we help you today?</label>
-      <textarea name="message" id="message" rows="4" required></textarea>
-
-      <button type="submit">Get My Free Quote</button>
-    </form>
-    <p style="margin-top:20px; text-align:center;">📞 Call us anytime: <strong>718-713-7668</strong></p>
-  </div>
-</body>
-</html>
+      <input type="text"
