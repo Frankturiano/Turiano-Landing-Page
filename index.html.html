@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turiano Agency – Protecting What Matters</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background-color: rgba(255, 165, 0, 0.45);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 1em;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #555;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e65c00;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Turiano Agency</h1>
+    <h2>Protecting Futures. Building Trust.</h2>
+    <p class="intro">
+      Are you interested in protecting your family? <br />
+      Need honest, professional guidance on life insurance or financial security? <br />
+      Let’s talk — we’re here to help.
+    </p>
+
+    <form name="quote-request" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="quote-request" />
+      
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required />
+
+      <label for="message">How can we help you today?</label>
+      <textarea name="message" id="message" rows="4" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Get My Free Quote</button>
+    </form>
+
+    <p class="footer">📞 Call us anytime: <strong>718-713-7668</strong><br/>Frank Turiano – Licensed 2-14 Agent</p>
+  </div>
+</body>
+</html>
 
